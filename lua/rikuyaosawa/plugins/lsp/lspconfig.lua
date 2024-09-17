@@ -67,6 +67,14 @@ return {
 			end,
 		})
 
+		-- configure hover documentation:
+		-- official doc: https://neovim.io/doc/user/lsp.html#vim.lsp.util.open_floating_preview()
+		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+			border = "single", -- options: "single", "double", "rounded", "shadow", "none"
+			max_width = 80, -- set maximum width
+			max_height = 20, -- set mazimum height
+		})
+
 		-- used to enable autocompletion (assign to every lsp server config)
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
