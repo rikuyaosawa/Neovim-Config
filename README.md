@@ -43,6 +43,12 @@ to run npm command.
 choco install nodejs
 ```
 
+### Lazygit
+enabling git inside neovim.
+```bash
+choco install lazygit
+```
+
 ### I referenced [Josean Martinez](https://www.josean.com/)'s [Setup](https://www.josean.com/posts/how-to-setup-neovim-2024) as the starter kit.
 ## Trouble Shooting (known errors)
 ### OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0 ...
