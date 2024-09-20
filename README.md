@@ -46,6 +46,9 @@ choco install nodejs
 ### I referenced [Josean Martinez](https://www.josean.com/)'s [Setup](https://www.josean.com/posts/how-to-setup-neovim-2024) as the starter kit.
 ## Trouble Shooting (known errors)
 ### OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0 ...
+#### Potential Cause
+- When loading a large amount of data from git repository, this error seems to occur.
+- Some kind of SSL problem \
 Config Git to use cert.pm
 ```bash
 git config --global http.sslBackend "openssl"
