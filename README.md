@@ -4,7 +4,7 @@
 
 ### Package Manager
 
-Like [Chocolatey](https://chocolatey.org/) to install dependencies.
+Like [Chocolatey](https://chocolatey.org/) to install software dependencies.
 
 ### True Color Terminal
 
@@ -13,7 +13,16 @@ I am using [WezTerm](https://wezfurlong.org/wezterm/index.html) for this setup.
 
 ```bash
 choco install wezterm
+```
 
+### MinGW-w64
+Without it language servers won't work. Also `MinGW (32-bit)` does not work either. \
+Install through [MSYS2](https://www.msys2.org/) using their installer.
+
+### Node.js
+Needed for plugin ecosystem.
+```bash
+choco install nodejs
 ```
 
 ### Nerd Font
