@@ -44,14 +44,6 @@ For plugins that provides search functionality.
 choco install ripgrep
 ```
 
-### Node
-
-to run npm command.
-
-```bash
-choco install nodejs
-```
-
 ### Lazygit
 enabling git inside neovim.
 ```bash
