@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- TODO: Configure User on different pc
+-- NOTE: Configure User on different pc
 require("lazy").setup({ { import = "rikuyaosawa.plugins" }, { import = "rikuyaosawa.plugins.lsp" } }, {
 	checker = {
 		enabled = true,
