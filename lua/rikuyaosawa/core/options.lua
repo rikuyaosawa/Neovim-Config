@@ -4,6 +4,9 @@ local opt = vim.opt -- for conciseness
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
 
+-- columns
+opt.colorcolumn = "80"
+
 -- scrolling
 opt.scrolloff = 8 -- scrolling keeps line 8 up and down
 
