@@ -1,8 +1,8 @@
 -- Highlight trailing whitespace
-vim.cmd("highlight TrailingWhitespace guifg=#FF0000 guibg=#3C0000") -- Original highlight
+vim.cmd("highlight TrailingWhitespace guifg=#FF0000 guibg=#3C0000")
 
 -- Highlight for the error text
-vim.cmd("highlight TrailingWhitespaceError guifg=#ffce17 guibg=#3A3A00") -- Dark red background
+vim.cmd("highlight TrailingWhitespaceError guifg=#ffce17 guibg=#3A3A00")
 
 local my_namespace = vim.api.nvim_create_namespace("trailing_whitespace")
 
@@ -11,7 +11,7 @@ local function highlight_trailing_spaces()
 	vim.fn.matchadd("TrailingWhitespace", "\\s\\+$")
 end
 
--- Function to set virtual text for trailing whitespace
+-- Function to set warning text for trailing whitespace
 local function set_trailing_whitespace(line)
 	vim.api.nvim_buf_set_virtual_text(
 		0,
@@ -27,7 +27,7 @@ local function clear_virtual_text()
 	vim.api.nvim_buf_clear_namespace(0, my_namespace, 0, -1)
 end
 
--- Function to check and highlight trailing spaces
+-- Function to check trailing spaces
 local function check_trailing_spaces()
 	clear_virtual_text() -- Clear previous virtual text
 	local line_count = vim.fn.line("$")
