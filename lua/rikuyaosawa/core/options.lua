@@ -9,6 +9,10 @@ opt.number = true -- shows absolute line number on cursor line (when relative nu
 opt.colorcolumn = "80"
 api.nvim_set_hl(0, "ColorColumn", { bg = "#212a40" })
 
+-- spell check
+opt.spell = true
+opt.spelllang = { "en_us" }
+
 -- scrolling
 opt.scrolloff = 8 -- scrolling keeps line 8 up and down
 
