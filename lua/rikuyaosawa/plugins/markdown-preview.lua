@@ -7,4 +7,10 @@ return {
 		vim.g.mkdp_filetypes = { "markdown" }
 	end,
 	ft = { "markdown" },
+	config = function()
+		local keymap = vim.keymap
+
+		keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<cr>", { desc = "Show markdown preview" })
+		keymap.set("n", "<leader>ms", "<cmd>MarkdownPreviewStop<cr>", { desc = "Stop markdown preview" })
+	end,
 }
