@@ -28,6 +28,7 @@ return {
 				"typescript",
 				"tsx",
 				"go",
+				"python",
 				"php",
 				"yaml",
 				"html",
