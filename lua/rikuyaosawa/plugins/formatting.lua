@@ -11,6 +11,7 @@ return {
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
 				golang = { "prettier " },
+				php = { "prettier " },
 				css = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },
