@@ -6,7 +6,7 @@ opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
 
 -- columns
-opt.colorcolumn = "80"
+opt.colorcolumn = "100"
 api.nvim_set_hl(0, "ColorColumn", { bg = "#212a40" })
 
 -- spell check
