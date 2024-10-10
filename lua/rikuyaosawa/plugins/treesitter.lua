@@ -20,6 +20,10 @@ return {
 			autotag = {
 				enable = true,
 			},
+			modules = {},
+			auto_install = true,
+			ignore_install = {},
+			sync_install = false,
 			-- ensure these language parsers are installed
 			ensure_installed = {
 				"json",
