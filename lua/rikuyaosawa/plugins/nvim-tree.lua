@@ -8,6 +8,12 @@ return {
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
 
+		-- make background transparent
+		vim.cmd([[
+      highlight NvimTreeNormal guibg=NONE ctermbg=NONE
+      highlight NvimTreeNormalNC guibg=NONE ctermbg=NONE
+    ]])
+
 		nvimtree.setup({
 			view = {
 				width = 35,
