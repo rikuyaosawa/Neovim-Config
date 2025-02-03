@@ -1,4 +1,4 @@
-# My Neovim Setup 2024
+# Neovim Setup
 
 ## Installation Requirement
 
